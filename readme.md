@@ -1,5 +1,9 @@
 # Excel project with basic dashboard and visualizations
 
+![Dashboard](Dashboard.png)
+
+![Pivot Tables](Pivots.png)
+
 In this project I will be cleaning a dataset, adding some useful columns, replacing rows with one value to other values, then creating KPI sheets, pivot tables and visualizations using this data. Using these visualizations I will create a dashboard to track all the stuff from a centralized place. Since the data is of employees, it will end up looking like an HR analytics project with a basic dashboard.
 
 ## Basic cleaning and data transformation with some useful columns added.
@@ -17,8 +21,8 @@ In this project I will be cleaning a dataset, adding some useful columns, replac
     - It seems that there is no managerID for the manager named "Webster Butler". After checking the manager name column using the filter dropdown, it seems that some of the other columns have the managerID for this manager which is 39. So we will populate all the other empty cells for this person with this managerID.
 
     Seems like no other column has any problems with NULL values of empty cells.
-    
-- **Changing blanks into NULL** - There are many in the Date of termination but that's to be expected as it would be empty for people who haven't been terminated. 
+  
+- **Changing blanks into NULL** - There are many in the Date of termination but that's to be expected as it would be empty for people who haven't been terminated.
     For changing these blank cells to NULL -> Select the column > Go to special from the upper ribbon > Toggle Blank on then press ok > Type NULL without clicking anywhere > Ctrl + Enter to populate all the blank cells.
  Since its advisable to change it to NULL or something like that so that it doesn't cause issues later on when you are working with the data in a querying language, so we will be changing it. It can also be done manually by populating all the empty cells that show after you filter for blank cells.
 
